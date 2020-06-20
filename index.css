@@ -1,0 +1,178 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f2f2;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .left-sidebar, .app .right-sidebar {
+    flex: 1;
+    height: 100%;
+    z-index: 100;
+    background-color: #f3f2f2;
+}
+
+.app .middle {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app .middle .top, .app .middle .bottom {
+    flex: 1;
+    width: 100%;
+    background-color: #f3f2f2;
+}
+
+.master-profile {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    z-index: 0;
+}
+
+.master-profile .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+    position: relative;
+    z-index: 0;
+}
+
+.master-profile .photo .arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.master-profile .photo .heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.master-profile .info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px 5px 0 5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: 100;
+}
+
+.master-profile .info .contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.master-profile .info .contacts .personal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.master-profile .info .contacts .personal-info .name {
+    font-size: 18px;
+}
+
+.master-profile .info .contacts .personal-info .profession {
+    margin-top: 3px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.master-profile .info .contacts .more-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.master-profile .info .contacts .more-info .personal-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.master-profile .info .contacts .more-info .personal-contacts .location {
+    width: 17px;
+    height: 22px;
+}
+
+.master-profile .info .about-master {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 7px;
+}
+
+.master-profile .info .about-master::-webkit-scrollbar {
+    display: none;
+}
+
+.master-profile .info .about-master .description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 7px 15px;
+}
+
+.master-profile .info .about-master .description .title {
+    font-size: 18px;
+}
+
+.master-profile .info .about-master .description .body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+.master-profile .info .about-master .projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.master-profile .info .about-master .projects .title {
+    margin: 7px 15px 7px 15px;
+    font-size: 18px;
+}
+
+.master-profile .info .about-master .projects .project-items {
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.master-profile .info .about-master .projects .project-items .left-side,
+.master-profile .info .about-master .projects .project-items .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.master-profile .info .about-master .projects .project-items .project-photo {
+    margin-bottom: 5px;
+    transition: all 0.2s ease-out;
+}
+
+.master-profile .info .about-master .projects .project-items .project-photo:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+}
+
+.master-profile .info .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
